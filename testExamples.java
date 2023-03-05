@@ -15,7 +15,7 @@ public class testExamples {
     @Test
     public void testRoundValue() {
         // fail("Not yet implemented");
-        assertEquals("value 0.20, rem 0.20, realValue 0.25", examples.roundValue(0.2));
+        assertEquals(0.25, examples.roundValue(0.2));
     }
 
 }

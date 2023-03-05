@@ -3,8 +3,8 @@ public class examples {
 
     public static void main(String[] args) {
         // examples myObj = new examples();
-        String answer = roundValue(0.23);
-        System.out.println(answer);
+
+        System.out.println(roundValue(0.23));
     }
 
     public static double roundValue(double value) {
@@ -19,7 +19,7 @@ public class examples {
             realValue = value;
         }
 
-        String msg = ("value " + String.format("%.2f", value) + ", rem " + String.format("%.2f", rem)
+        //String msg = ("value " + String.format("%.2f", value) + ", rem " + String.format("%.2f", rem)
                 + ", realValue " + String.format("%.2f", realValue));
 
         // System.out.println(msg);

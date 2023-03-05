@@ -1,10 +1,14 @@
 
 public class test {
-    public static void main(String[] args) {
 
-        double value = 4.235298924;
+    public static void main(String[] args) {
+        test myObj = new test();
+        myObj.roundValue(0.23);
+    }
+
+    public void roundValue(double value) {
+
         double realValue;
-        value = .2;
 
         double rem = value % .25;
 
@@ -14,9 +18,7 @@ public class test {
             realValue = value;
         }
 
-        System.out.println(String.format("%.2f", value));
-        System.out.println(String.format("%.2f", rem));
-        System.out.println(String.format("%.2f", realValue));
-
+        System.out.println("value " + String.format("%.2f", value) + ", rem " + String.format("%.2f", rem)
+                + ", realValue " + String.format("%.2f", realValue));
     }
 }

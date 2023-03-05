@@ -7,7 +7,7 @@ public class examples {
         System.out.println(answer);
     }
 
-    public static String roundValue(double value) {
+    public static double roundValue(double value) {
 
         double realValue;
 
@@ -24,6 +24,6 @@ public class examples {
 
         // System.out.println(msg);
 
-        return msg;
+        return realValue;
     }
 }

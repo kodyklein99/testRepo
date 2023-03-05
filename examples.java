@@ -19,11 +19,6 @@ public class examples {
             realValue = value;
         }
 
-        //String msg = ("value " + String.format("%.2f", value) + ", rem " + String.format("%.2f", rem)
-                + ", realValue " + String.format("%.2f", realValue));
-
-        // System.out.println(msg);
-
         return realValue;
     }
 }

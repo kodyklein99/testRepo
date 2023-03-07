@@ -2,21 +2,21 @@
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-public class testExamples {
+public class TestExamples {
 
     /**
      * Tests the constructor (for 100% coverage).
      */
     @Test
     public void testDefaultConstructor() {
-        new examples();
+        new Examples();
     }
 
     // roundValue is a static method and be called without creating an instance
     @Test
     public void testStaticRoundValue() {
         // fail("Not yet implemented");
-        assertEquals(0.25, examples.staticRoundValue(0.2));
+        assertEquals(0.25, Examples.staticRoundValue(0.2));
 
     }
 
@@ -25,7 +25,7 @@ public class testExamples {
     @Test
     public void testnotStaticRoundValue() {
         // fail("Not yet implemented");
-        examples myObj = new examples();
+        Examples myObj = new Examples();
         assertEquals(0.25, myObj.notStaticRoundValue(0.2));
         assertEquals(0.25, myObj.notStaticRoundValue(0.25));
 

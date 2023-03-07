@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
  * @author
  * @version
  */
-public class testWeatherUtils {
+public class TestWeatherUtils {
 
     /**
      * Tests the weatherAdvice method.

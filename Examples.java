@@ -1,5 +1,5 @@
 
-public class examples {
+public class Examples {
 
     // The main method is what runs when you call the class. Similar to python if
     // name == main. Without a main method, you can't run it and can only create

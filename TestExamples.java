@@ -9,7 +9,7 @@ public class TestExamples {
      */
     @Test
     public void testDefaultConstructor() {
-        new Examples(0.23);
+        new Examples(0.23, 0.25);
     }
 
     // roundValue is a static method and be called without creating an instance
@@ -27,10 +27,10 @@ public class TestExamples {
     @Test
     public void testNotStaticRoundValue() {
         // fail("Not yet implemented");
-        Examples myObj = new Examples(0.23);
+        Examples myObj = new Examples(0.23, 0.25);
         assertEquals(0.25, myObj.notStaticRoundValue());
 
-        Examples myObj2 = new Examples(0.25);
+        Examples myObj2 = new Examples(0.25, 0.25);
         assertEquals(0.25, myObj2.notStaticRoundValue());
 
     }

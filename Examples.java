@@ -1,9 +1,11 @@
 
 public class Examples {
     double value;
+    double roundToIncrement;
 
-    public Examples(double value) {
+    public Examples(double value, double roundToIncrement) {
         this.value = value;
+        this.roundToIncrement = roundToIncrement;
 
     }
 
@@ -12,14 +14,17 @@ public class Examples {
     // instances.
     public static void main(String[] args) {
         // examples myObj = new examples();
-        Examples myObj = new Examples(0.23);
+        double value = 0.23;
+        double roundToIncrement = 0.25;
+
+        Examples myObj = new Examples(value, roundToIncrement);
 
         System.out.println(myObj.notStaticRoundValue());
     }
 
     /*
      * A static method belongs to the class as well as the instance, but accessing
-     * // the method from the instance works but is discouraged.
+     * the method from the instance works but is discouraged.
      * public static double staticRoundValue(double value) {
      * return roundValue(value);
      * }
@@ -28,16 +33,16 @@ public class Examples {
     // A non-static method belongs to only the instance and can only be accessed by
     // creating an instance
     public double notStaticRoundValue() {
-        return roundValue(value);
+        return roundValue(value, roundToIncrement);
     }
 
-    private static double roundValue(double value) {
+    private double roundValue(double value, double roundToIncrement) {
         double realValue;
 
-        double rem = value % .25;
+        double rem = value % roundToIncrement;
 
         if (rem != 0.0) {
-            realValue = value - rem + .25;
+            realValue = value - rem + roundToIncrement;
         } else {
             realValue = value;
         }

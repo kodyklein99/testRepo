@@ -35,6 +35,23 @@ public class TestExamples {
 
     }
 
+    @Test
+    public void testGetters() {
+        Examples myObj = new Examples(0.23, 0.25);
+        assertEquals(0.25, myObj.getRoundToIncrement());
+        assertEquals(0.23, myObj.getValue());
+
+    }
+
+    @Test
+    public void testSetters() {
+        Examples myObj = new Examples(0.23, 0.25);
+        myObj.setRoundToIncrement(.5);
+        myObj.setValue(.1);
+        assertEquals(0.5, myObj.getRoundToIncrement());
+        assertEquals(0.1, myObj.getValue());
+    }
+
     /**
      * This test fails because it is trying to access a private method from outside
      * the class.

@@ -1,7 +1,7 @@
 
 public class Examples {
-    double value;
-    double roundToIncrement;
+    private double value;
+    private double roundToIncrement;
 
     public Examples(double value, double roundToIncrement) {
         this.value = value;
